@@ -1,0 +1,32 @@
+body{
+  background-color: var(--gray-color);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.container-paypal{
+  padding: 10px;
+
+}
+.container-paypal img{
+  width: 100px;
+  height: 100px;
+  background-size: 100px 100px;
+}
+.container-paypal a{
+  color: green;
+}
+.container-error{
+  padding: 10px;
+
+}
+.container-error img{
+  width: 100px;
+  height: 100px;
+  background-size: 100px 100px;
+}
+.container-error a{
+  color: red;
+}

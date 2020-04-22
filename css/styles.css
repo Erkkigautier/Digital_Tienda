@@ -1,0 +1,352 @@
+:root{
+--gray-color: #272424;
+--font-family-h1: 'Permanent Marker', cursive;
+}
+/* h1 = 60
+   h2 = 40
+   h3 = 24
+   h4 = 20
+    p = 18 - 16
+   font-family: 'Crimson Text', serif; Parrafo
+   font-family: 'Anton', sans-serif; Titulo -2
+   font-family: 'Permanent Marker', cursive; Titulo
+   font-family: 'Noto Sans', sans-serif; Botones - Formulario
+   */
+body{
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0;
+  font-family: 'Noto Sans', sans-serif;
+}
+/* Menu */
+.logo{
+  font-family: 'Permanent Marker', cursive;
+  font-size: 40px;
+}
+nav{
+  height: 100px;
+  background: var(--gray-color);
+  color: white;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+nav ul{
+  padding: 0;
+}
+nav li{
+  display: inline-block;
+}
+nav li a{
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
+  font-weight: bold;
+}
+/* Banner */
+.container-banner{
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* fondo */
+  background-image: url('../img/Banner.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.banner{
+  width: 700px;
+  height: 300px;
+  text-align: center;
+  color: white;
+}
+.banner h1{
+  font-family: var(--font-family-h1);
+  font-size: 80px;
+  margin: 0;
+}
+.banner p{
+  font-family: 'Crimson Text', serif;
+  font-size: 18px;
+  margin: 0;
+  padding: 30px 0;
+}
+.button{
+  width: 100%;
+  background-color: var(--gray-color);
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 10px 30px;
+  margin: 10px 0;
+}
+.button:hover{
+  /* background-color: var(--gray-color); */
+  color: white;
+  opacity: 0.5;
+}
+/* Contenida */
+.container-about{
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  background-image: url('../img/lines.png');
+  background-size: 100%
+  background-position: center;
+}
+.about{
+  width: 1000px;
+  height: 400px;
+  font-family: var(--font-family-h1);
+}
+.about h1{
+  font-size: 60px;
+  margin: 20px 0;
+}
+.about p{
+  font-size: 24px;
+}
+/* Catalogo */
+.container-catalog{
+  height: 600px;
+  margin: 0;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+}
+.catalog{
+}
+.catalog img{
+  width: 440px;
+  height: 550px;
+  background-size: 440px 550px;
+  box-shadow:  0 0px 4px gray;
+}
+.catalog h2{
+  width: 440px;
+  margin: auto;
+  padding: 10px 0;
+  border: 1px solid #272424;
+  cursor: pointer;
+}
+.catalog h2:hover{
+  background: #272424;
+  color: white;
+}
+/* Formulario */
+.container-contact{
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+.contact-form{
+  width: 600px;
+  height: 500px;
+  padding: 10px 50px;
+  background: var(--gray-color);
+}
+.form{
+  padding: 0;
+  color: white;
+}
+.form input{
+  padding: 5px 80px;
+  border-radius: 5px;
+  border-style: none;
+  margin-bottom: 5px;
+}
+.form button{
+  font-weight: bold;
+  margin: 10px 0;
+  border-radius: 5px;
+  border-style: none;
+  padding: 5px 10px;
+}
+.contact-social{
+  width: 300px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.contact-social h3{
+  margin: 20px 0;
+}
+.contact-social a{
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  background-size: 50px 50px;
+  background-repeat: no-repeat;
+  margin: 0 20px;
+}
+.social-facebook{
+  background-image: url('../img/facebook.svg');
+  align-items: center;
+  vertical-align: middle;
+}
+.social-instagram{
+  background-image: url('../img/instagram.svg');
+  align-items: center;
+  vertical-align: middle;
+}
+.social-gmail{
+  background-image: url('../img/google-mas.svg');
+  align-items: center;
+  vertical-align: middle;
+}
+.contact-link1{
+  width: 600px;
+  height: 500px;
+  padding: 10px 50px;
+  color: black;
+  font-size: 20px;
+  background-image: url('../img/opacidad-contact.jpg');
+  background-size: 600px 500px
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+.contact-link1 li a{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+.contact-link1 ul{
+  padding: 0;
+  list-style: none;
+}
+/* Pie de página */
+.footer{
+  background: black;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 20px;
+  color: white;
+  font-size: 12px;
+}
+/* Productos */
+.banner-products{
+  height: 500px;
+  margin: 0;
+  padding: 0;
+  background-image: url('../img/portada-accesorio.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.banner-text{
+  margin: 0;
+  padding: 0;
+  width: 500px;
+  height: 200px;
+  text-align: center;
+  font-family: 'Anton', sans-serif;
+  color: white;
+  text-shadow: 2px 2px 5px black;
+}
+.banner-products h1{
+  font-size: 40px;
+}
+.banner-products p{
+  text-align: center;
+  font-size: 18px;
+}
+.container-products{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+}
+.products-option{
+  margin: 0 5px;
+  text-align: center;
+}
+.products-option h1{
+  text-align: center;
+  color: black;
+}
+.products-option ul{
+  padding: 0;
+}
+.products-option li a{
+  color: gray;
+  text-decoration: none;
+}
+.products-option li{
+  padding: 10px 150px;
+  margin-bottom: 5px;
+  list-style: none;
+  border-radius: 5px;
+  box-shadow:  0 0px 4px gray;
+}
+.products-1{
+  display: flex;
+  flex-shrink: 1;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+.box-1{
+  margin: 10px 12px;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0px 0 2px 1px #e6e5e9;
+}
+img{
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+}
+.box-1 h4{
+  margin: 5px 0;
+}
+.box-1 p{
+  margin: 5px 0;
+}
+.box-1 button{
+  margin: 5px 0;
+  border-radius: 10px;
+  border: 1px solid black;
+  padding: 5px 10px;
+}
+.box-1 button a{
+  text-decoration: none;
+  color: inherit;
+}
+/* Venta */
+.modulo_pago{
+  background-color: white;
+  box-shadow: 0px 0 2px 1px #e6e5e9;
+  padding: 10px;
+}
+.modulo_pago img{
+  width: 350px;
+  margin: auto;
+}
+p, label{
+  font-size: 16px;
+}
+.data{
+  margin-top: 10px;
+  width: 100%;
+  height: 35px;
+  border-radius: 5px;
+  border: 1px solid black;
+  box-sizing: border-box;
+}
